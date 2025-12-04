@@ -1,0 +1,16 @@
+SELECT E.EMPLOYEE_ID,
+      E.NAME AS EMPLOYEE_NAME
+FROM EMPLOYEE E
+JOIN EMPLOYEE M
+ON E.MANAGER_ID = M.EMPLOYEE_ID
+WHERE E.SALARY > M.SALARY;
+
+
+SELECT PATIENTS.first_namE,
+       PATIENTS.last_name,
+       PROVINCE_NAMES.province_name
+FROM patients 
+LEFT JOIN province_names
+ON PATIENTS.province_id = province_names.province_id;
+
+
