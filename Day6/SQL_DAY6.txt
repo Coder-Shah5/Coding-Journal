@@ -1,0 +1,34 @@
+1.
+SELECT distinct year(birth_date) AS birth_year
+FROM patients
+order by birth_year asc;
+
+2.
+SELECT first_name
+FROM patients
+GROUP BY first_name
+having COUNT(*) =1
+ORDER BY first_name;
+
+3.
+SELECT patient_id ,first_name
+FROM patients
+WHERE first_name like 's%s'
+and LENGTH(first_name)>5;
+
+4.
+SELECT patients.patient_id ,first_name,last_name
+FROM patients
+join admissions
+ON patients.patient_id = admissions.patient_id
+WHERE diagnosis = 'Dementia';
+
+5.
+SELECT first_name
+FROM patients
+ORDER BY LENGTH(first_name),first_name;
+
+6.
+SELECT COUNT(CASE WHEN gender='M' THEN 1 END) AS male_count,
+       COUNT(CASE WHEN gender='F' THEn 1 END) AS female_count
+FROM patients;
