@@ -34,8 +34,7 @@
 ### Topics Covered:
 - INNER JOIN
 - LEFT JOIN
-- Finding customers with no orders
-- Total spending per customer
+
 
 📁 File: `/SQL - JOINS/Day5sql_joins
 
@@ -43,10 +42,10 @@
 
 ## 📊 Power BI – Data Jobs Dashboard (Version 2)
 ### Improvements Added:
-- ✔ DAX Measures (Total Jobs, Average Salary, Distinct Companies)
-- ✔ Slicers for Location, Role, Skills
-- ✔ Clean formatting + new insights
-- ✔ Better layout and visual clarity
+- ✔ Column charts 
+- ✔ Bar charts
+- ✔ Line charts
+- ✔ Area charts
 
 📁 Folder: `/POWER BI - Line & area charts/Day5_DataJobsDashboard_v2/`
 
